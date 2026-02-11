@@ -4,7 +4,7 @@
      }
 
      prettyPrint(node.right, `${prefix}${isLeft ? '│   ' : '    '}`, false);
-     console.log(`${prefix}${isLeft ? '└── ' : '┌── '}${node.data}`);
+     console.log(`${prefix}${isLeft ? '└── ' : '┌── '}${node.value}`);
      prettyPrint(node.left, `${prefix}${isLeft ? '    ' : '│   '}`, true);
    }
 export default prettyPrint
